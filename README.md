@@ -17,6 +17,7 @@ Simply put the .dll and Injector.exe in the same folder, and open Injector.exe
 It should automatically inject the .DLL into the target process.
 
 If you did this right, this is what the Injector should be saying.
+
 ![](https://i.imgur.com/vlnlGpb.png)
 
 Press INSERT to open the menu.
