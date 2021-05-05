@@ -1,7 +1,5 @@
 # Garry's Mod Lua Executor / Scripthook
 
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 This is both an executor and a scripthook for [Garry's Mod](https://store.steampowered.com/app/4000/Garrys_Mod/).
 
@@ -65,4 +63,3 @@ You can contact me on [Telegram](https://t.me/Gaztoof), at t.me/@Gaztoof
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
