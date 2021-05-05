@@ -10,6 +10,7 @@ HANDLE consoleHandle;
 
 void main()
 {
+    SetConsoleTitle("Garry's Mod Lua Executor / ScriptHook Injector - Coded by t.me/Gaztoof");
     consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleColor(FOREGROUND_BLUE | FOREGROUND_INTENSITY);
     std::cout << "[*] Waiting for Gmod.exe..." << std::endl;
