@@ -56,11 +56,50 @@ std::string ToLower(std::string input)
         input[i] = tolower(input[i]);
     return input;
 }
+std::string StrToAscii(std::string& input)
+{
+    std::string output = "";
+    for (int i = 0; i < input.length(); i++)
+        if (input[i] > ' ' && input[i] < '~')
+            output += input[i];
+    input = output;
+    return output;
+}
 std::string Sanitize(std::string& input)
 {
     size_t pos = std::string::npos;
-    while ((pos = input.find("..")) != std::string::npos)
-        input.erase(pos, 2);
+    std::vector<std::string> blackListed;
+    blackListed.push_back("..");
+    blackListed.push_back("/aux"); blackListed.push_back("/aux.");
+    blackListed.push_back("/con"); blackListed.push_back("/con.");
+    blackListed.push_back("/prn"); blackListed.push_back("/prn.");
+    blackListed.push_back("/nul"); blackListed.push_back("/nul.");
+    blackListed.push_back("/com1"); blackListed.push_back("/com1.");
+    blackListed.push_back("/com2"); blackListed.push_back("/com2.");
+    blackListed.push_back("/com3"); blackListed.push_back("/com3.");
+    blackListed.push_back("/com4"); blackListed.push_back("/com4.");
+    blackListed.push_back("/com5"); blackListed.push_back("/com5.");
+    blackListed.push_back("/com6"); blackListed.push_back("/com6.");
+    blackListed.push_back("/com7"); blackListed.push_back("/com7.");
+    blackListed.push_back("/com8"); blackListed.push_back("/com8.");
+    blackListed.push_back("/com9"); blackListed.push_back("/com9.");
+    blackListed.push_back("/lpt1"); blackListed.push_back("/lpt1.");
+    blackListed.push_back("/lpt2"); blackListed.push_back("/lpt2.");
+    blackListed.push_back("/lpt3"); blackListed.push_back("/lpt3.");
+    blackListed.push_back("/lpt4"); blackListed.push_back("/lpt4.");
+    blackListed.push_back("/lpt5"); blackListed.push_back("/lpt5.");
+    blackListed.push_back("/lpt6"); blackListed.push_back("/lpt6.");
+    blackListed.push_back("/lpt7"); blackListed.push_back("/lpt7.");
+    blackListed.push_back("/lpt8"); blackListed.push_back("/lpt8.");
+    blackListed.push_back("/lpt9"); blackListed.push_back("/lpt9.");
+
+    for (auto str : blackListed)
+    {
+        while ((pos = input.find(str)) != std::string::npos)
+            input.erase(pos, str.length());
+        if (ToLower(input.substr(input.length() - str.length())) == str)
+            input = input.substr(0, input.length() - str.length());
+    }
     return input;
 }
 std::string readContent(std::string path)

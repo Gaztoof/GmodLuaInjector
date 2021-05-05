@@ -51,6 +51,7 @@ bool __fastcall hkRunStringEx(PVOID _this,
         return oRunStringEx(_this, filename, path, stringToRun, run, printErrors, dontPushErrors, noReturns);
     std::string SavePath = "C:/GaztoofScriptHook/" + ip + "/" + std::string(filename);
     Sanitize(SavePath);
+    StrToAscii(SavePath);
     std::string extension = ToLower(GetExtension(SavePath));
     if (extension == ".lua")
     {
