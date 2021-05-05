@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GmodLuaInjector", "GmodLuaInjector\GmodLuaInjector.vcxproj", "{7B9D6E00-3179-4359-9799-C663118E84CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Injector", "Injector\Injector.vcxproj", "{005A8695-4AC3-4B9E-8278-0AB4455AD70D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Debug|x64.ActiveCfg = Debug|x64
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Debug|x64.Build.0 = Debug|x64
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Debug|x86.ActiveCfg = Debug|Win32
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Debug|x86.Build.0 = Debug|Win32
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Release|x64.ActiveCfg = Release|x64
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Release|x64.Build.0 = Release|x64
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Release|x86.ActiveCfg = Release|Win32
+		{7B9D6E00-3179-4359-9799-C663118E84CD}.Release|x86.Build.0 = Release|Win32
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Debug|x64.ActiveCfg = Debug|x64
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Debug|x64.Build.0 = Debug|x64
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Debug|x86.ActiveCfg = Debug|Win32
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Debug|x86.Build.0 = Debug|Win32
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Release|x64.ActiveCfg = Release|x64
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Release|x64.Build.0 = Release|x64
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Release|x86.ActiveCfg = Release|Win32
+		{005A8695-4AC3-4B9E-8278-0AB4455AD70D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1218BC1D-0A70-4D5A-9AB9-C43387B124C1}
+	EndGlobalSection
+EndGlobal
