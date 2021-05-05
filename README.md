@@ -25,14 +25,18 @@ Press INSERT to open the menu.
 
 You don't know whether your game is in x86, or x64?
 Then it's simple, go to your Steam Library, right click on Garry's Mod, and click on Properties.
+
 ![](https://i.imgur.com/XIsyJKq.png)
 
 After that, click on Betas, and select x86-64
+
 ![](https://i.imgur.com/KZJDXTD.png)
 
 That's it! Your game can now run in x64.
 Next time you run it, make sure you select this
+
 ![](https://i.imgur.com/OiN64SU.png)
+
 ## Contact
 
 You can contact me on [Telegram](https://t.me/Gaztoof), at t.me/@Gaztoof
