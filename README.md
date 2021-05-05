@@ -1,4 +1,4 @@
-# GmodLuaInjector# Garry's Mod Lua Executor / Scripthook
+# Garry's Mod Lua Executor / Scripthook
 
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
