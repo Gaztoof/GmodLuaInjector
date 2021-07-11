@@ -27,12 +27,15 @@ void main()
     GetCurrentDirectory(MAX_PATH, currDir);
 
     std::string filePath = std::string(currDir + std::string("\\GmodLuaInjector.dll"));
-    if (std::fstream(filePath).bad())
+    std::fstream fileStream(filePath);
+    if (fileStream.bad())
     {
         SetConsoleColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
         std::cout << "[!] Please, make sure GmodLuaInjector.dll is next to this .exe." << std::endl;
         getchar(); return;
     }
+    fileStream.close();
+    
     const char* path = "C:/GaztoofScriptHook/GmodLuaInjector.dll";
     
     HANDLE hProc = OpenProcess(PROCESS_ALL_ACCESS, FALSE, gmodPID);
